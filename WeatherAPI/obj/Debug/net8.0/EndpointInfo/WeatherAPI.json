@@ -1,0 +1,79 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "WeatherAPI",
+    "version": "1.0"
+  },
+  "paths": {
+    "/Weather/Current/{zipcode}": {
+      "get": {
+        "tags": [
+          "Weather"
+        ],
+        "parameters": [
+          {
+            "name": "zipcode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "units",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "fahrenheit"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Weather/Average/{zipcode}": {
+      "get": {
+        "tags": [
+          "Weather"
+        ],
+        "parameters": [
+          {
+            "name": "zipcode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "units",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "fahrenheit"
+            }
+          },
+          {
+            "name": "timePeriod",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 3
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

@@ -1,0 +1,49 @@
+[
+  {
+    "ContainingType": "WeatherAPI.Controllers.WeatherController",
+    "Method": "GetAverage",
+    "RelativePath": "Weather/Average/{zipcode}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "zipcode",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "units",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "timePeriod",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WeatherAPI.Controllers.WeatherController",
+    "Method": "GetCurrent",
+    "RelativePath": "Weather/Current/{zipcode}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "zipcode",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "units",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
