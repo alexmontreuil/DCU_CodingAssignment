@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "WeatherCLI": {
+      "commandName": "Project",
+      "commandLineArgs": "get-current-weather 10001 fahrenheit --output table",
+      "workingDirectory": "C:\\Users\\alexm\\source\\repos\\WeatherCLI"
+    }
+  }
+}
